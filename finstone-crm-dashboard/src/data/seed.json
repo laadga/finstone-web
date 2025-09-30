@@ -1,0 +1,1003 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "name": "Alex Founder",
+      "email": "admin@finstone.test",
+      "role": "admin",
+      "avatar": "AF"
+    },
+    {
+      "id": "u_sales",
+      "name": "Maya Sales",
+      "email": "sales@finstone.test",
+      "role": "sales",
+      "avatar": "MS"
+    },
+    {
+      "id": "u_support",
+      "name": "Jon Support",
+      "email": "support@finstone.test",
+      "role": "support",
+      "avatar": "JS"
+    }
+  ],
+  "leads": [
+    {
+      "id": "L-001",
+      "name": "Sofia Ramos",
+      "company": "Ramos Legal",
+      "email": "sofia@ramoslegal.com",
+      "phone": "+1-415-555-0101",
+      "source": "LinkedIn Outreach",
+      "interestedPlan": "Growth",
+      "assignedTo": "u_sales",
+      "status": "Demo Scheduled",
+      "lastContact": "2025-01-19T10:30:00Z",
+      "createdAt": "2025-01-10T09:00:00Z",
+      "estimatedValue": 5000,
+      "notes": [
+        {
+          "id": "n-001",
+          "author": "u_sales",
+          "text": "Interested in CFO + Support agent. Booked demo 1/21.",
+          "createdAt": "2025-01-19T10:30:00Z"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "t-001",
+          "title": "Prepare demo for Ramos Legal",
+          "assignee": "u_sales",
+          "dueDate": "2025-01-21T14:00:00Z",
+          "status": "open",
+          "createdAt": "2025-01-19T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "L-002",
+      "name": "Omar Khan",
+      "company": "BrightBuild",
+      "email": "omar@brightbuild.co",
+      "phone": "+1-212-555-0123",
+      "source": "Cold Email",
+      "interestedPlan": "Starter",
+      "assignedTo": "u_sales",
+      "status": "Contacted",
+      "lastContact": "2025-01-18T15:00:00Z",
+      "createdAt": "2025-01-12T08:00:00Z",
+      "estimatedValue": 2000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-003",
+      "name": "Elena Chen",
+      "company": "TechFlow Solutions",
+      "email": "elena@techflow.com",
+      "phone": "+1-310-555-0145",
+      "source": "Website",
+      "interestedPlan": "Business",
+      "assignedTo": "u_sales",
+      "status": "New",
+      "lastContact": "2025-01-20T14:00:00Z",
+      "createdAt": "2025-01-20T14:00:00Z",
+      "estimatedValue": 12000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-004",
+      "name": "Marcus Johnson",
+      "company": "Johnson & Associates",
+      "email": "marcus@jassoc.com",
+      "phone": "+1-312-555-0167",
+      "source": "Referral",
+      "interestedPlan": "Enterprise",
+      "assignedTo": "u_sales",
+      "status": "Proposal Sent",
+      "lastContact": "2025-01-19T16:30:00Z",
+      "createdAt": "2025-01-15T11:00:00Z",
+      "estimatedValue": 25000,
+      "notes": [
+        {
+          "id": "n-002",
+          "author": "u_sales",
+          "text": "High-value prospect. Sent custom proposal for enterprise package.",
+          "createdAt": "2025-01-19T16:30:00Z"
+        }
+      ],
+      "tasks": []
+    },
+    {
+      "id": "L-005",
+      "name": "Sarah Williams",
+      "company": "Williams Consulting",
+      "email": "sarah@williamsconsulting.com",
+      "phone": "+1-617-555-0189",
+      "source": "Event",
+      "interestedPlan": "Growth",
+      "assignedTo": "u_sales",
+      "status": "Won",
+      "lastContact": "2025-01-18T09:00:00Z",
+      "createdAt": "2025-01-05T10:00:00Z",
+      "estimatedValue": 8000,
+      "notes": [
+        {
+          "id": "n-003",
+          "author": "u_sales",
+          "text": "Closed! Starting onboarding next week.",
+          "createdAt": "2025-01-18T09:00:00Z"
+        }
+      ],
+      "tasks": []
+    },
+    {
+      "id": "L-006",
+      "name": "David Park",
+      "company": "Park Analytics",
+      "email": "david@parkanalytics.com",
+      "phone": "+1-206-555-0201",
+      "source": "Website",
+      "interestedPlan": "Starter",
+      "assignedTo": "u_sales",
+      "status": "Qualified",
+      "lastContact": "2025-01-17T11:00:00Z",
+      "createdAt": "2025-01-14T09:00:00Z",
+      "estimatedValue": 3000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-007",
+      "name": "Lisa Rodriguez",
+      "company": "Rodriguez Marketing",
+      "email": "lisa@rodriguezmarketing.com",
+      "phone": "+1-305-555-0223",
+      "source": "Cold Email",
+      "interestedPlan": "Business",
+      "assignedTo": "u_sales",
+      "status": "Contacted",
+      "lastContact": "2025-01-16T14:00:00Z",
+      "createdAt": "2025-01-13T10:00:00Z",
+      "estimatedValue": 15000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-008",
+      "name": "James Wilson",
+      "company": "Wilson Tech",
+      "email": "james@wilsontech.com",
+      "phone": "+1-512-555-0245",
+      "source": "LinkedIn Outreach",
+      "interestedPlan": "Enterprise",
+      "assignedTo": "u_sales",
+      "status": "Demo Scheduled",
+      "lastContact": "2025-01-15T16:00:00Z",
+      "createdAt": "2025-01-11T08:00:00Z",
+      "estimatedValue": 30000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-009",
+      "name": "Maria Garcia",
+      "company": "Garcia Consulting",
+      "email": "maria@garciaconsulting.com",
+      "phone": "+1-213-555-0267",
+      "source": "Referral",
+      "interestedPlan": "Growth",
+      "assignedTo": "u_sales",
+      "status": "New",
+      "lastContact": "2025-01-20T10:00:00Z",
+      "createdAt": "2025-01-20T10:00:00Z",
+      "estimatedValue": 6000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-010",
+      "name": "Robert Brown",
+      "company": "Brown Industries",
+      "email": "robert@brownindustries.com",
+      "phone": "+1-312-555-0289",
+      "source": "Website",
+      "interestedPlan": "Business",
+      "assignedTo": "u_sales",
+      "status": "Qualified",
+      "lastContact": "2025-01-19T13:00:00Z",
+      "createdAt": "2025-01-16T12:00:00Z",
+      "estimatedValue": 18000,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-011",
+      "name": "Jennifer Lee",
+      "company": "Lee Solutions",
+      "email": "jennifer@leesolutions.com",
+      "phone": "+1-415-555-0301",
+      "source": "Event",
+      "interestedPlan": "Starter",
+      "assignedTo": "u_sales",
+      "status": "Contacted",
+      "lastContact": "2025-01-18T15:30:00Z",
+      "createdAt": "2025-01-17T14:00:00Z",
+      "estimatedValue": 2500,
+      "notes": [],
+      "tasks": []
+    },
+    {
+      "id": "L-012",
+      "name": "Michael Davis",
+      "company": "Davis Corp",
+      "email": "michael@daviscorp.com",
+      "phone": "+1-617-555-0323",
+      "source": "Cold Email",
+      "interestedPlan": "Enterprise",
+      "assignedTo": "u_sales",
+      "status": "Lost",
+      "lastContact": "2025-01-15T11:00:00Z",
+      "createdAt": "2025-01-10T09:00:00Z",
+      "estimatedValue": 40000,
+      "notes": [
+        {
+          "id": "n-004",
+          "author": "u_sales",
+          "text": "Went with competitor. Budget constraints.",
+          "createdAt": "2025-01-15T11:00:00Z"
+        }
+      ],
+      "tasks": []
+    }
+  ],
+  "customers": [
+    {
+      "id": "C-100",
+      "company": "GreenCart eCom",
+      "plan": "Pro",
+      "contacts": [
+        {
+          "name": "Lina Park",
+          "email": "lina@greencart.com",
+          "role": "CFO"
+        }
+      ],
+      "billingStatus": "Active",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-15T10:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": false,
+          "dueDate": "2025-01-25T00:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": false,
+          "dueDate": "2025-01-30T00:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": false,
+          "dueDate": "2025-02-05T00:00:00Z"
+        }
+      ],
+      "agents": [
+        {
+          "id": "A-1",
+          "type": "Sales Closer",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-16T14:00:00Z"
+        },
+        {
+          "id": "A-2",
+          "type": "CFO Agent",
+          "status": "provisioning",
+          "startedAt": "2025-01-20T09:00:00Z"
+        }
+      ],
+      "mrr": 149,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-10T08:00:00Z"
+    },
+    {
+      "id": "C-101",
+      "company": "DataFlow Inc",
+      "plan": "Business",
+      "contacts": [
+        {
+          "name": "David Kim",
+          "email": "david@dataflow.com",
+          "role": "CTO"
+        }
+      ],
+      "billingStatus": "Active",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-12T11:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": true,
+          "completedAt": "2025-01-18T15:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": true,
+          "completedAt": "2025-01-20T10:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": false,
+          "dueDate": "2025-01-28T00:00:00Z"
+        }
+      ],
+      "agents": [
+        {
+          "id": "A-3",
+          "type": "Sales Closer",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-20T10:00:00Z"
+        },
+        {
+          "id": "A-4",
+          "type": "Support Agent",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-20T11:00:00Z"
+        }
+      ],
+      "mrr": 299,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-08T09:00:00Z"
+    },
+    {
+      "id": "C-102",
+      "company": "StartupXYZ",
+      "plan": "Starter",
+      "contacts": [
+        {
+          "name": "Alex Rivera",
+          "email": "alex@startupxyz.com",
+          "role": "Founder"
+        }
+      ],
+      "billingStatus": "Trialing",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-19T14:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": false,
+          "dueDate": "2025-01-26T00:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": false,
+          "dueDate": "2025-02-02T00:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": false,
+          "dueDate": "2025-02-09T00:00:00Z"
+        }
+      ],
+      "agents": [],
+      "mrr": 49,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-18T13:00:00Z"
+    },
+    {
+      "id": "C-103",
+      "company": "TechStart Pro",
+      "plan": "Growth",
+      "contacts": [
+        {
+          "name": "Sarah Chen",
+          "email": "sarah@techstartpro.com",
+          "role": "CEO"
+        }
+      ],
+      "billingStatus": "Active",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-14T10:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": true,
+          "completedAt": "2025-01-19T16:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": true,
+          "completedAt": "2025-01-21T09:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": true,
+          "completedAt": "2025-01-22T14:00:00Z"
+        }
+      ],
+      "agents": [
+        {
+          "id": "A-5",
+          "type": "Sales Closer",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-21T09:00:00Z"
+        },
+        {
+          "id": "A-6",
+          "type": "Marketing Agent",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-21T10:00:00Z"
+        }
+      ],
+      "mrr": 199,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-12T11:00:00Z"
+    },
+    {
+      "id": "C-104",
+      "company": "Enterprise Solutions",
+      "plan": "Enterprise",
+      "contacts": [
+        {
+          "name": "Michael Johnson",
+          "email": "michael@enterprisesolutions.com",
+          "role": "CTO"
+        }
+      ],
+      "billingStatus": "Active",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-11T09:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": true,
+          "completedAt": "2025-01-17T14:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": true,
+          "completedAt": "2025-01-19T11:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": true,
+          "completedAt": "2025-01-21T15:00:00Z"
+        }
+      ],
+      "agents": [
+        {
+          "id": "A-7",
+          "type": "Sales Closer",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-19T11:00:00Z"
+        },
+        {
+          "id": "A-8",
+          "type": "CFO Agent",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-19T12:00:00Z"
+        },
+        {
+          "id": "A-9",
+          "type": "Support Agent",
+          "status": "provisioned",
+          "provisionedAt": "2025-01-19T13:00:00Z"
+        }
+      ],
+      "mrr": 499,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-09T08:00:00Z"
+    },
+    {
+      "id": "C-105",
+      "company": "SmallBiz Hub",
+      "plan": "Starter",
+      "contacts": [
+        {
+          "name": "Lisa Wang",
+          "email": "lisa@smallbizhub.com",
+          "role": "Owner"
+        }
+      ],
+      "billingStatus": "Active",
+      "onboardingProgress": [
+        {
+          "step": "Kickoff Call",
+          "done": true,
+          "completedAt": "2025-01-16T13:00:00Z"
+        },
+        {
+          "step": "Integrations",
+          "done": false,
+          "dueDate": "2025-01-23T00:00:00Z"
+        },
+        {
+          "step": "Provision Agents",
+          "done": false,
+          "dueDate": "2025-01-30T00:00:00Z"
+        },
+        {
+          "step": "Training",
+          "done": false,
+          "dueDate": "2025-02-06T00:00:00Z"
+        }
+      ],
+      "agents": [],
+      "mrr": 49,
+      "nextBillingDate": "2025-02-01T00:00:00Z",
+      "createdAt": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": "A-1",
+      "agentType": "Sales Closer",
+      "defaultConfig": {
+        "emailsPerDay": 50
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-2",
+      "agentType": "CFO Agent",
+      "defaultConfig": {
+        "reportFrequency": "weekly"
+      },
+      "status": "provisioning"
+    },
+    {
+      "id": "A-3",
+      "agentType": "Sales Closer",
+      "defaultConfig": {
+        "emailsPerDay": 75
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-4",
+      "agentType": "Support Agent",
+      "defaultConfig": {
+        "responseTime": "2h"
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-5",
+      "agentType": "Sales Closer",
+      "defaultConfig": {
+        "emailsPerDay": 60
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-6",
+      "agentType": "Marketing Agent",
+      "defaultConfig": {
+        "campaignsPerWeek": 3
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-7",
+      "agentType": "Sales Closer",
+      "defaultConfig": {
+        "emailsPerDay": 100
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-8",
+      "agentType": "CFO Agent",
+      "defaultConfig": {
+        "reportFrequency": "daily"
+      },
+      "status": "active"
+    },
+    {
+      "id": "A-9",
+      "agentType": "Support Agent",
+      "defaultConfig": {
+        "responseTime": "1h"
+      },
+      "status": "active"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "I-001",
+      "customerId": "C-100",
+      "amount": 149,
+      "dueDate": "2025-02-01",
+      "status": "paid",
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "I-002",
+      "customerId": "C-101",
+      "amount": 299,
+      "dueDate": "2025-02-01",
+      "status": "paid",
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "I-003",
+      "customerId": "C-102",
+      "amount": 49,
+      "dueDate": "2025-02-01",
+      "status": "sent",
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "I-004",
+      "customerId": "C-103",
+      "amount": 199,
+      "dueDate": "2025-02-01",
+      "status": "paid",
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "I-005",
+      "customerId": "C-104",
+      "amount": 499,
+      "dueDate": "2025-02-01",
+      "status": "paid",
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "I-006",
+      "customerId": "C-105",
+      "amount": 49,
+      "dueDate": "2025-02-01",
+      "status": "sent",
+      "createdAt": "2025-01-01T00:00:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-1",
+      "title": "Prepare demo for Ramos Legal",
+      "assignee": "u_sales",
+      "dueDate": "2025-01-21",
+      "relatedTo": "L-001",
+      "status": "open",
+      "createdAt": "2025-01-19T10:00:00Z"
+    },
+    {
+      "id": "T-2",
+      "title": "Follow up with BrightBuild",
+      "assignee": "u_sales",
+      "dueDate": "2025-01-22",
+      "relatedTo": "L-002",
+      "status": "open",
+      "createdAt": "2025-01-18T16:00:00Z"
+    },
+    {
+      "id": "T-3",
+      "title": "Complete GreenCart integrations",
+      "assignee": "u_support",
+      "dueDate": "2025-01-25",
+      "relatedTo": "C-100",
+      "status": "in_progress",
+      "createdAt": "2025-01-20T09:00:00Z"
+    },
+    {
+      "id": "T-4",
+      "title": "Schedule training for DataFlow",
+      "assignee": "u_support",
+      "dueDate": "2025-01-28",
+      "relatedTo": "C-101",
+      "status": "open",
+      "createdAt": "2025-01-20T11:00:00Z"
+    },
+    {
+      "id": "T-5",
+      "title": "Review enterprise proposal",
+      "assignee": "u_sales",
+      "dueDate": "2025-01-23",
+      "relatedTo": "L-004",
+      "status": "open",
+      "createdAt": "2025-01-19T17:00:00Z"
+    },
+    {
+      "id": "T-6",
+      "title": "Setup onboarding call for StartupXYZ",
+      "assignee": "u_support",
+      "dueDate": "2025-01-22",
+      "relatedTo": "C-102",
+      "status": "open",
+      "createdAt": "2025-01-19T15:00:00Z"
+    },
+    {
+      "id": "T-7",
+      "title": "Configure integrations for SmallBiz Hub",
+      "assignee": "u_support",
+      "dueDate": "2025-01-23",
+      "relatedTo": "C-105",
+      "status": "open",
+      "createdAt": "2025-01-16T14:00:00Z"
+    },
+    {
+      "id": "T-8",
+      "title": "Follow up on lost lead - Davis Corp",
+      "assignee": "u_sales",
+      "dueDate": "2025-01-25",
+      "relatedTo": "L-012",
+      "status": "open",
+      "createdAt": "2025-01-15T12:00:00Z"
+    }
+  ],
+  "provisioningQueue": [
+    {
+      "id": "P-1",
+      "customerId": "C-100",
+      "agentType": "CFO Agent",
+      "requestDate": "2025-01-20T09:00:00Z",
+      "status": "provisioning",
+      "lastUpdate": "2025-01-20T14:30:00Z",
+      "logs": [
+        {
+          "timestamp": "2025-01-20T09:00:00Z",
+          "level": "info",
+          "message": "Provisioning started for CFO Agent"
+        },
+        {
+          "timestamp": "2025-01-20T09:15:00Z",
+          "level": "info",
+          "message": "Configuration loaded successfully"
+        },
+        {
+          "timestamp": "2025-01-20T14:30:00Z",
+          "level": "info",
+          "message": "Agent initialization in progress"
+        }
+      ]
+    },
+    {
+      "id": "P-2",
+      "customerId": "C-102",
+      "agentType": "Sales Closer",
+      "requestDate": "2025-01-21T10:00:00Z",
+      "status": "queued",
+      "lastUpdate": "2025-01-21T10:00:00Z",
+      "logs": [
+        {
+          "timestamp": "2025-01-21T10:00:00Z",
+          "level": "info",
+          "message": "Added to provisioning queue"
+        }
+      ]
+    },
+    {
+      "id": "P-3",
+      "customerId": "C-105",
+      "agentType": "Support Agent",
+      "requestDate": "2025-01-22T08:00:00Z",
+      "status": "failed",
+      "lastUpdate": "2025-01-22T10:00:00Z",
+      "logs": [
+        {
+          "timestamp": "2025-01-22T08:00:00Z",
+          "level": "info",
+          "message": "Provisioning started for Support Agent"
+        },
+        {
+          "timestamp": "2025-01-22T09:30:00Z",
+          "level": "error",
+          "message": "Configuration validation failed"
+        },
+        {
+          "timestamp": "2025-01-22T10:00:00Z",
+          "level": "error",
+          "message": "Provisioning failed - retry required"
+        }
+      ]
+    }
+  ],
+  "activityFeed": [
+    {
+      "id": "act-001",
+      "type": "lead_created",
+      "title": "New lead created",
+      "description": "Sofia Ramos from Ramos Legal",
+      "timestamp": "2025-01-20T14:00:00Z",
+      "user": "u_sales"
+    },
+    {
+      "id": "act-002",
+      "type": "subscription_started",
+      "title": "Subscription started",
+      "description": "GreenCart eCom upgraded to Pro plan",
+      "timestamp": "2025-01-19T16:00:00Z",
+      "user": "u_sales"
+    },
+    {
+      "id": "act-003",
+      "type": "onboarding_completed",
+      "title": "Onboarding step completed",
+      "description": "DataFlow Inc completed integrations setup",
+      "timestamp": "2025-01-18T15:00:00Z",
+      "user": "u_support"
+    },
+    {
+      "id": "act-004",
+      "type": "agent_provisioned",
+      "title": "Agent provisioned",
+      "description": "Sales Closer agent for TechStart Pro",
+      "timestamp": "2025-01-17T11:00:00Z",
+      "user": "u_support"
+    },
+    {
+      "id": "act-005",
+      "type": "demo_scheduled",
+      "title": "Demo scheduled",
+      "description": "Demo with Johnson & Associates",
+      "timestamp": "2025-01-16T14:00:00Z",
+      "user": "u_sales"
+    },
+    {
+      "id": "act-006",
+      "type": "invoice_sent",
+      "title": "Invoice sent",
+      "description": "Invoice I-003 sent to StartupXYZ",
+      "timestamp": "2025-01-15T10:00:00Z",
+      "user": "u_support"
+    },
+    {
+      "id": "act-007",
+      "type": "task_completed",
+      "title": "Task completed",
+      "description": "Complete GreenCart integrations",
+      "timestamp": "2025-01-14T16:00:00Z",
+      "user": "u_support"
+    },
+    {
+      "id": "act-008",
+      "type": "lead_converted",
+      "title": "Lead converted to customer",
+      "description": "Sarah Williams from Williams Consulting",
+      "timestamp": "2025-01-13T09:00:00Z",
+      "user": "u_sales"
+    }
+  ],
+  "dashboardStats": {
+    "mrr": 1244,
+    "newLeads7d": 5,
+    "activeCustomers": 6,
+    "pendingOnboards": 3,
+    "churnRate": 2.1,
+    "mrrTrend": [
+      {"month": "Jul", "value": 800},
+      {"month": "Aug", "value": 920},
+      {"month": "Sep", "value": 1050},
+      {"month": "Oct", "value": 1100},
+      {"month": "Nov", "value": 1150},
+      {"month": "Dec", "value": 1200},
+      {"month": "Jan", "value": 1244}
+    ],
+    "conversionFunnel": [
+      {"stage": "Leads", "count": 12},
+      {"stage": "Demos", "count": 8},
+      {"stage": "Proposals", "count": 5},
+      {"stage": "Closed", "count": 3}
+    ]
+  },
+  "integrations": [
+    {
+      "id": "int-001",
+      "name": "Slack",
+      "description": "Team communication and notifications",
+      "status": "connected",
+      "connectedAt": "2025-01-15T10:00:00Z",
+      "icon": "💬"
+    },
+    {
+      "id": "int-002",
+      "name": "HubSpot",
+      "description": "CRM and marketing automation",
+      "status": "connected",
+      "connectedAt": "2025-01-12T14:00:00Z",
+      "icon": "🎯"
+    },
+    {
+      "id": "int-003",
+      "name": "QuickBooks",
+      "description": "Accounting and financial management",
+      "status": "available",
+      "icon": "📊"
+    },
+    {
+      "id": "int-004",
+      "name": "Gmail",
+      "description": "Email integration and tracking",
+      "status": "connected",
+      "connectedAt": "2025-01-10T09:00:00Z",
+      "icon": "📧"
+    },
+    {
+      "id": "int-005",
+      "name": "Calendly",
+      "description": "Schedule meetings and demos",
+      "status": "available",
+      "icon": "📅"
+    },
+    {
+      "id": "int-006",
+      "name": "Shopify",
+      "description": "E-commerce platform integration",
+      "status": "available",
+      "icon": "🛒"
+    }
+  ],
+  "supportTickets": [
+    {
+      "id": "ticket-001",
+      "customerId": "C-100",
+      "subject": "Integration setup help needed",
+      "status": "open",
+      "priority": "medium",
+      "createdAt": "2025-01-20T11:00:00Z",
+      "lastMessage": "Need help setting up Slack integration",
+      "assignee": "u_support"
+    },
+    {
+      "id": "ticket-002",
+      "customerId": "C-101",
+      "subject": "Agent not responding",
+      "status": "in_progress",
+      "priority": "high",
+      "createdAt": "2025-01-19T15:00:00Z",
+      "lastMessage": "Sales agent stopped responding to emails",
+      "assignee": "u_support"
+    },
+    {
+      "id": "ticket-003",
+      "customerId": "C-103",
+      "subject": "Billing question",
+      "status": "closed",
+      "priority": "low",
+      "createdAt": "2025-01-18T10:00:00Z",
+      "lastMessage": "Question about invoice I-004",
+      "assignee": "u_support"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
