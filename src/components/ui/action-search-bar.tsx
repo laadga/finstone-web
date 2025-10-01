@@ -334,4 +334,3 @@ function ActionSearchBar({ actions = defaultActions }: { actions?: Action[] }) {
 }
 
 export { ActionSearchBar };
-export type { Action };
