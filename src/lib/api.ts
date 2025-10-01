@@ -60,6 +60,36 @@ class ApiClient {
     }
   }
 
+  private async requestPaginated<T>(
+    endpoint: string, 
+    options: RequestInit = {}
+  ): Promise<PaginatedResponse<T>> {
+    try {
+      // Simulate network delay
+      await delay(500);
+
+      const url = `${this.baseUrl}${endpoint}`;
+      const response = await fetch(url, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${localStorage.getItem('auth_token')}`,
+          ...options.headers,
+        },
+        ...options,
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('API request failed:', error);
+      throw error;
+    }
+  }
+
   // Authentication
   async login(email: string, password: string): Promise<ApiResponse<{ user: any; token: string }>> {
     return this.request('/auth/login', {
@@ -81,7 +111,7 @@ class ApiClient {
 
   // Leads
   async getLeads(page: number = 1, limit: number = 50): Promise<PaginatedResponse<Lead>> {
-    return this.request(`/leads?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/leads?page=${page}&limit=${limit}`);
   }
 
   async getLead(id: string): Promise<ApiResponse<Lead>> {
