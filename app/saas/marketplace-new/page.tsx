@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -1589,7 +1589,7 @@ const getCategoryDescription = (categoryName: string) => {
   return descriptionMap[categoryName] || descriptionMap["AI"];
 };
 
-export default function LinydStyleMarketplace() {
+function LinydStyleMarketplaceContent() {
   const searchParams = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState<string>("AI");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -1855,5 +1855,13 @@ export default function LinydStyleMarketplace() {
 
     </div>
     </>
+  );
+}
+
+export default function LinydStyleMarketplace() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LinydStyleMarketplaceContent />
+    </Suspense>
   );
 }
