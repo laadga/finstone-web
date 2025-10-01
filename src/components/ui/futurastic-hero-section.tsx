@@ -73,7 +73,7 @@ export const AuroraHero = ({ finstoneAgentsAndDepartments }: AuroraHeroProps) =>
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  }, [color]);
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, transparent 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
