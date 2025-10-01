@@ -621,4 +621,4 @@ Would you like to know more about any of these services, or would you prefer to 
     );
 }
 
-export { FunctionalSearchBar, Action };
+export { FunctionalSearchBar };
