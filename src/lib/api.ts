@@ -140,7 +140,7 @@ class ApiClient {
 
   // Customers
   async getCustomers(page: number = 1, limit: number = 50): Promise<PaginatedResponse<Customer>> {
-    return this.request(`/customers?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/customers?page=${page}&limit=${limit}`);
   }
 
   async getCustomer(id: string): Promise<ApiResponse<Customer>> {
