@@ -20,7 +20,7 @@ export default function AnalyticsPage() {
     };
 
     // Wheel event with manual scroll tracking
-    const handleWheel = (e) => {
+    const handleWheel = (e: WheelEvent) => {
       scrollPosition += e.deltaY;
       const shouldBeScrolled = scrollPosition > 50;
       setIsScrolled(shouldBeScrolled);
