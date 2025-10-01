@@ -74,9 +74,9 @@ export function Dashboard() {
   const [stats, setStats] = useState(mockStats);
   const [leads, setLeads] = useState(mockLeads);
   const [activity, setActivity] = useState(mockActivity);
-  const [selectedLead, setSelectedLead] = useState(null);
+  const [selectedLead, setSelectedLead] = useState<any>(null);
 
-  const KpiCard = ({ title, value, trend, subtitle, color = 'blue' }) => {
+  const KpiCard = ({ title, value, trend, subtitle, color = 'blue' }: { title: any, value: any, trend?: any, subtitle: any, color?: string }) => {
     const colorClasses = {
       blue: 'bg-blue-50 border-blue-200 text-blue-600',
       green: 'bg-green-50 border-green-200 text-green-600',
@@ -109,7 +109,7 @@ export function Dashboard() {
     );
   };
 
-  const LeadRow = ({ lead }) => (
+  const LeadRow = ({ lead }: { lead: any }) => (
     <tr 
       className="hover:bg-gray-50 transition-colors cursor-pointer"
       onClick={() => setSelectedLead(lead)}
@@ -222,7 +222,7 @@ export function Dashboard() {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {leads.map((lead) => (
+                  {leads.map((lead: any) => (
                     <LeadRow key={lead.id} lead={lead} />
                   ))}
                 </tbody>
@@ -236,7 +236,7 @@ export function Dashboard() {
           <div className="bg-white rounded-xl border border-gray-200 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
             <div className="space-y-4">
-              {activity.map((item) => (
+              {activity.map((item: any) => (
                 <div key={item.id} className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                   <div className="flex-1 min-w-0">
