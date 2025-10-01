@@ -9,7 +9,7 @@ import { MarketingFeature108 } from '@/components/ui/feature108-marketing'
 import { SupportFeature108 } from '@/components/ui/feature108-support'
 import { CompanyLogosArc } from '@/components/ui/company-logos-arc'
 import CaseStudies from '@/components/ui/case-studies'
-import { PricingSectionDemo } from '@/components/ui/pricing-demo'
+// import { PricingSectionDemo } from '@/components/ui/pricing-demo'
 import { FAQ } from '@/components/ui/faq'
 import { Footer } from '@/components/ui/footer'
 // import { CRMNotification } from '@/components/ui/crm-notification'
@@ -102,7 +102,7 @@ export default function Home() {
       <CaseStudies />
 
       {/* Pricing Section */}
-      <PricingSectionDemo />
+      {/* <PricingSectionDemo /> */}
 
       {/* FAQ */}
       <FAQ />
