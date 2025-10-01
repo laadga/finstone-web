@@ -132,7 +132,7 @@ export function Customers() {
             </span>
           </div>
           <div className="flex flex-wrap gap-1">
-            {customer.agents.map((agent) => (
+            {customer.agents.map((agent: any) => (
               <span
                 key={agent.id}
                 className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
@@ -168,7 +168,7 @@ export function Customers() {
 
       {/* Customer Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {customers.map((customer) => (
+        {customers.map((customer: any) => (
           <CustomerCard key={customer.id} customer={customer} />
         ))}
       </div>
@@ -216,7 +216,7 @@ export function Customers() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  {selectedCustomer.onboardingProgress.map((step, index) => (
+                  {selectedCustomer.onboardingProgress.map((step: any, index: number) => (
                     <div key={index} className="flex items-center space-x-3">
                       {step.done ? (
                         <span className="text-green-500">✅</span>
@@ -240,7 +240,7 @@ export function Customers() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Provisioned Agents</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {selectedCustomer.agents.map((agent) => (
+                  {selectedCustomer.agents.map((agent: any) => (
                     <div key={agent.id} className="p-4 border border-gray-200 rounded-lg">
                       <div className="flex items-center justify-between mb-2">
                         <h4 className="font-medium text-gray-900">{agent.type}</h4>
@@ -266,11 +266,11 @@ export function Customers() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Contacts</h3>
                 <div className="space-y-3">
-                  {selectedCustomer.contacts.map((contact, index) => (
+                  {selectedCustomer.contacts.map((contact: any, index: number) => (
                     <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                       <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
                         <span className="text-sm font-medium text-gray-700">
-                          {contact.name.split(' ').map(n => n[0]).join('')}
+                          {contact.name.split(' ').map((n: string) => n[0]).join('')}
                         </span>
                       </div>
                       <div>
