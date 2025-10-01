@@ -1,5 +1,7 @@
 "use client";
 
+import Link from 'next/link';
+
 export default function MinimalPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50 to-gray-200 flex items-center justify-center">
@@ -11,12 +13,12 @@ export default function MinimalPage() {
           Minimal test page - if you see this, everything is working!
         </p>
         <div className="space-y-4">
-          <a 
+          <Link 
             href="/" 
             className="block bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-medium text-lg transition-colors"
           >
             Go to Main Website
-          </a>
+          </Link>
           <a 
             href="/simple" 
             className="block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-medium text-lg transition-colors"

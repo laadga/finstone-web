@@ -24,7 +24,6 @@ export default function SimplePage() {
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">🔗 Navigation</h2>
             <div className="space-y-2">
-              <a href="/" className="block text-blue-600 hover:text-blue-800">Main Website</a>
               <a href="/crm" className="block text-blue-600 hover:text-blue-800">CRM Dashboard</a>
               <a href="/test" className="block text-blue-600 hover:text-blue-800">Test Page</a>
             </div>

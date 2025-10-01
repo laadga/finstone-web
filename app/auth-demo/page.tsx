@@ -125,12 +125,12 @@ export default function AuthDemo() {
           <div className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,0,0,0.04)_0,rgba(0,0,0,0.01)_80%,transparent_100%)] absolute top-0 right-0 h-80 w-24 translate-x-2 -translate-y-1/2 rounded-full" />
           <div className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,0,0,0.04)_0,rgba(0,0,0,0.01)_80%,transparent_100%)] absolute top-0 right-0 h-80 w-24 -translate-y-32 rounded-full" />
         </div>
-                <a href="/" className="absolute top-7 left-5 inline-flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors">
+                <Link href="/" className="absolute top-7 left-5 inline-flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
                   Home
-                </a>
+                </Link>
         <div className="mx-auto space-y-4 max-w-sm">
           <div className="flex items-center gap-2 lg:hidden">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">

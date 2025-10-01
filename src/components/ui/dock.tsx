@@ -205,16 +205,17 @@ function DockIcon({ children, className, ...rest }: DockIconProps) {
   const restProps = rest as Record<string, unknown>;
   const width = restProps['width'] as MotionValue<number>;
 
+  // Move useTransform before conditional return to follow React Hooks rules
+  const widthTransform = width ? useTransform(width, (val) => val / 2) : undefined;
+
   // Safety check for width prop
-  if (!width) {
+  if (!width || !widthTransform) {
     return (
       <div className={cn('flex items-center justify-center', className)}>
         {children}
       </div>
     );
   }
-
-  const widthTransform = useTransform(width, (val) => val / 2);
 
   return (
     <motion.div

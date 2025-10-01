@@ -306,23 +306,6 @@ export default function CRMPage() {
               </div>
             </div>
           )}
-          
-          <div style={{ textAlign: 'center' }}>
-            <a 
-              href="/" 
-              style={{ 
-                display: 'inline-block',
-                backgroundColor: '#28a745', 
-                color: 'white', 
-                padding: '12px 24px', 
-                textDecoration: 'none',
-                borderRadius: '5px',
-                fontSize: '16px'
-              }}
-            >
-              ← Back to Main Website
-            </a>
-          </div>
         </div>
         
         <div style={{ 

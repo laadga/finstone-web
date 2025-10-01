@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from './button';
+import Link from 'next/link';
 
 import {
 	AppleIcon,
@@ -47,14 +48,14 @@ export function AuthPage() {
 					<div className="bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,--theme(--color-foreground/.06)_0,hsla(0,0%,55%,.02)_50%,--theme(--color-foreground/.01)_80%)] absolute top-0 right-0 h-320 w-140 -translate-y-87.5 rounded-full" />
 					<div className="bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)] absolute top-0 right-0 h-320 w-60 [translate:5%_-50%] rounded-full" />
 					<div className="bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)] absolute top-0 right-0 h-320 w-60 -translate-y-87.5 rounded-full" />
-				</div>
-				<Button variant="ghost" className="absolute top-7 left-5" asChild>
-					<a href="/">
-						<ChevronLeftIcon className='size-4 me-2' />
-						Home
-					</a>
-				</Button>
-				<div className="mx-auto space-y-4 sm:w-sm">
+			</div>
+			<Button variant="ghost" className="absolute top-7 left-5" asChild>
+				<Link href="/">
+					<ChevronLeftIcon className='size-4 me-2' />
+					Home
+				</Link>
+			</Button>
+			<div className="mx-auto space-y-4 sm:w-sm">
 					<div className="flex items-center gap-2 lg:hidden">
 						<Grid2x2PlusIcon className="size-6" />
 						<p className="text-xl font-semibold">Finstone AI</p>

@@ -18,7 +18,7 @@ export default function CRMLoginPage() {
         {/* Back to Website */}
         <div style={{ marginBottom: '20px' }}>
           <a 
-            href="/" 
+            href="/crm" 
             style={{ 
               display: 'flex',
               alignItems: 'center',
