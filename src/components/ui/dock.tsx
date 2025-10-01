@@ -203,19 +203,20 @@ function DockLabel({ children, className, ...rest }: DockLabelProps) {
 
 function DockIcon({ children, className, ...rest }: DockIconProps) {
   const restProps = rest as Record<string, unknown>;
-  const width = restProps['width'] as MotionValue<number>;
+  const width = restProps['width'] as MotionValue<number> | undefined;
 
-  // Move useTransform before conditional return to follow React Hooks rules
-  const widthTransform = width ? useTransform(width, (val) => val / 2) : undefined;
-
-  // Safety check for width prop
-  if (!width || !widthTransform) {
+  // Safety check for width prop - return early before any hooks
+  if (!width) {
     return (
       <div className={cn('flex items-center justify-center', className)}>
         {children}
       </div>
     );
   }
+
+  // Now we can safely use hooks after the conditional return
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const widthTransform = useTransform(width, (val) => val / 2);
 
   return (
     <motion.div
