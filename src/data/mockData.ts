@@ -147,6 +147,7 @@ export const mockAgentProvisions: AgentProvision[] = [
     createdAt: new Date('2024-01-11'),
     logs: [
       {
+        id: '1',
         timestamp: new Date('2024-01-11T10:00:00'),
         message: 'Marketing agent provisioning started',
         level: 'info'
