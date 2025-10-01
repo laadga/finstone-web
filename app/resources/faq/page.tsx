@@ -3,9 +3,10 @@
 import { Footer } from "@/components/ui/footer";
 import { FunctionalSearchBar } from "@/components/ui/functional-search-bar";
 import { Header } from "@/components/ui/header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function FAQPage() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -16,6 +17,20 @@ export default function FAQPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || 
+                       document.documentElement.scrollTop || 
+                       document.body.scrollTop || 0;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
@@ -79,7 +94,7 @@ export default function FAQPage() {
       `}</style>
       
       {/* Navigation Header */}
-      <Header />
+      <Header isScrolled={isScrolled} />
       
       {/* Search Bar Section */}
       <div className="pt-80 pb-12 px-4 sm:px-6 lg:px-8">
