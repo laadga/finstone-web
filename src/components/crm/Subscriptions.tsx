@@ -42,7 +42,7 @@ const mockSubscriptions = [
 export function Subscriptions() {
   const [subscriptions, setSubscriptions] = useState(mockSubscriptions);
 
-  const handleCheckout = (customerId, planId) => {
+  const handleCheckout = (customerId: string, planId: string) => {
     // Mock checkout - in real app, this would redirect to Stripe
     alert(`Opening checkout for ${customerId} - ${planId} plan`);
   };
@@ -59,7 +59,7 @@ export function Subscriptions() {
 
       {/* Subscriptions List */}
       <div className="space-y-4">
-        {subscriptions.map((subscription) => (
+        {subscriptions.map((subscription: any) => (
           <div key={subscription.id} className="bg-white rounded-xl border border-gray-200 p-6">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-4">
@@ -112,7 +112,7 @@ export function Subscriptions() {
               <div>
                 <div className="text-sm text-gray-500 mb-1">Recent Invoices</div>
                 <div className="space-y-1">
-                  {subscription.invoices.slice(0, 2).map((invoice) => (
+                  {subscription.invoices.slice(0, 2).map((invoice: any) => (
                     <div key={invoice.id} className="flex items-center justify-between text-sm">
                       <span className="text-gray-600">#{invoice.id}</span>
                       <div className="flex items-center space-x-2">
@@ -140,19 +140,19 @@ export function Subscriptions() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center">
             <div className="text-2xl font-bold text-green-600">
-              {formatCurrency(subscriptions.reduce((sum, sub) => sum + sub.mrr, 0))}
+              {formatCurrency(subscriptions.reduce((sum: number, sub: any) => sum + sub.mrr, 0))}
             </div>
             <div className="text-sm text-gray-500">Total MRR</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-blue-600">
-              {subscriptions.filter(sub => sub.billingStatus === 'Active').length}
+              {subscriptions.filter((sub: any) => sub.billingStatus === 'Active').length}
             </div>
             <div className="text-sm text-gray-500">Active Subscriptions</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-yellow-600">
-              {subscriptions.filter(sub => sub.billingStatus === 'Trialing').length}
+              {subscriptions.filter((sub: any) => sub.billingStatus === 'Trialing').length}
             </div>
             <div className="text-sm text-gray-500">Trialing</div>
           </div>
