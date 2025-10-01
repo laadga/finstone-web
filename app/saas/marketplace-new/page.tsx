@@ -1558,24 +1558,14 @@ const getCategoryColors = (categoryName: string) => {
       c3: "oklch(80% 0.10 20)"   // Light orange
     },
     "Document Ops": {
-      c1: "oklch(70% 0.15 300)", // Purple
-      c2: "oklch(75% 0.12 320)", // Pink
-      c3: "oklch(80% 0.10 280)"  // Light purple
-    },
-    "Other": {
-      c1: "oklch(70% 0.15 60)",  // Yellow
-      c2: "oklch(75% 0.12 30)",  // Orange
-      c3: "oklch(80% 0.10 50)"   // Light yellow
+      c1: "oklch(70% 0.15 140)", // Green
+      c2: "oklch(75% 0.12 160)", // Green-cyan
+      c3: "oklch(80% 0.10 120)"  // Light green
     },
     "Support": {
       c1: "oklch(70% 0.15 320)", // Magenta
       c2: "oklch(75% 0.12 340)", // Pink
       c3: "oklch(80% 0.10 300)"  // Light magenta
-    },
-    "Document Ops": {
-      c1: "oklch(70% 0.15 140)", // Green
-      c2: "oklch(75% 0.12 160)", // Green-cyan
-      c3: "oklch(80% 0.10 120)"  // Light green
     },
     "Other": {
       c1: "oklch(70% 0.15 0)",   // Gray
