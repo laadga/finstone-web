@@ -53,9 +53,9 @@ const mockIntegrations = [
 export function Integrations() {
   const [integrations, setIntegrations] = useState(mockIntegrations);
 
-  const handleConnect = (name) => {
+  const handleConnect = (name: string) => {
     setIntegrations(integrations => 
-      integrations.map(integration => 
+      integrations.map((integration: any) => 
         integration.name === name 
           ? { ...integration, status: 'connected', connectedAt: new Date().toISOString() }
           : integration
@@ -63,9 +63,9 @@ export function Integrations() {
     );
   };
 
-  const handleDisconnect = (name) => {
+  const handleDisconnect = (name: string) => {
     setIntegrations(integrations => 
-      integrations.map(integration => 
+      integrations.map((integration: any) => 
         integration.name === name 
           ? { ...integration, status: 'available', connectedAt: undefined }
           : integration
@@ -85,7 +85,7 @@ export function Integrations() {
 
       {/* Integrations Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {integrations.map((integration) => (
+        {integrations.map((integration: any) => (
           <div key={integration.id} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center space-x-3">
