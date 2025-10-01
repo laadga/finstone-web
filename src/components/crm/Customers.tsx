@@ -71,9 +71,9 @@ const mockCustomers = [
 
 export function Customers() {
   const [customers, setCustomers] = useState(mockCustomers);
-  const [selectedCustomer, setSelectedCustomer] = useState(null);
+  const [selectedCustomer, setSelectedCustomer] = useState<any>(null);
 
-  const CustomerCard = ({ customer }) => {
+  const CustomerCard = ({ customer }: { customer: any }) => {
     const progress = calculateOnboardingProgress(customer.onboardingProgress);
     
     return (
