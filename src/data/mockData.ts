@@ -145,6 +145,13 @@ export const mockAgentProvisions: AgentProvision[] = [
     status: 'provisioning',
     customerId: '1',
     createdAt: new Date('2024-01-11'),
+    logs: [
+      {
+        timestamp: new Date('2024-01-11T10:00:00'),
+        message: 'Marketing agent provisioning started',
+        level: 'info'
+      }
+    ]
   },
 ];
 
