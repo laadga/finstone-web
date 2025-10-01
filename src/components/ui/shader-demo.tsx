@@ -3,17 +3,17 @@ import { ShaderAnimation } from "@/components/ui/shader-animation";
 import { useState, useCallback } from "react";
 
 // Error boundary component
-class ShaderErrorBoundary extends React.Component {
-  constructor(props) {
+class ShaderErrorBoundary extends React.Component<any, { hasError: boolean }> {
+  constructor(props: any) {
     super(props);
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: Error) {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.error('ShaderDemo Error:', error, errorInfo);
   }
 
