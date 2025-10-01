@@ -11,7 +11,6 @@ import AgentsFlipShowcase from '@/components/ui/agents-flip-showcase'
 import CaseStudies from '@/components/ui/case-studies'
 import { FAQ } from '@/components/ui/faq'
 import { Footer } from '@/components/ui/footer'
-import { Chatbot } from '@/components/ui/chatbot'
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -125,9 +124,6 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-
-      {/* Chatbot */}
-      <Chatbot />
     </main>
     </>
   );
