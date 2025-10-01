@@ -233,7 +233,7 @@ class ApiClient {
 
   // Support Tickets
   async getSupportTickets(page: number = 1, limit: number = 50): Promise<PaginatedResponse<SupportTicket>> {
-    return this.request(`/support/tickets?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/support/tickets?page=${page}&limit=${limit}`);
   }
 
   async getSupportTicket(id: string): Promise<ApiResponse<SupportTicket>> {
