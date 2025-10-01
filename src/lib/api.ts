@@ -163,7 +163,7 @@ class ApiClient {
 
   // Tasks
   async getTasks(page: number = 1, limit: number = 50): Promise<PaginatedResponse<Task>> {
-    return this.request(`/tasks?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/tasks?page=${page}&limit=${limit}`);
   }
 
   async getTask(id: string): Promise<ApiResponse<Task>> {
