@@ -67,6 +67,7 @@ const createPaginatedResponse = <T>(
       total: data.length,
       totalPages: Math.ceil(data.length / limit),
     },
+    success: true,
   };
 };
 
