@@ -10,7 +10,7 @@ import {
 	AtSignIcon,
 	ChevronLeftIcon,
 	GithubIcon,
-	Grid2x2PlusIcon,
+	Grid2X2Icon,
 } from 'lucide-react';
 import { Input } from './input';
 import { cn } from '@/lib/utils';
@@ -21,7 +21,7 @@ export function AuthPage() {
 			<div className="bg-muted/60 relative hidden h-full flex-col border-r p-10 lg:flex">
 				<div className="from-background absolute inset-0 z-10 bg-gradient-to-t to-transparent" />
 				<div className="z-10 flex items-center gap-2">
-					<Grid2x2PlusIcon className="size-6" />
+					<Grid2X2Icon className="size-6" />
 					<p className="text-xl font-semibold">Finstone AI</p>
 				</div>
 				<div className="z-10 mt-auto">
@@ -57,7 +57,7 @@ export function AuthPage() {
 			</Button>
 			<div className="mx-auto space-y-4 sm:w-sm">
 					<div className="flex items-center gap-2 lg:hidden">
-						<Grid2x2PlusIcon className="size-6" />
+						<Grid2X2Icon className="size-6" />
 						<p className="text-xl font-semibold">Finstone AI</p>
 					</div>
 					<div className="flex flex-col space-y-1">
