@@ -217,7 +217,7 @@ class ApiClient {
 
   // Invoices
   async getInvoices(page: number = 1, limit: number = 50): Promise<PaginatedResponse<Invoice>> {
-    return this.request(`/invoices?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/invoices?page=${page}&limit=${limit}`);
   }
 
   async getInvoice(id: string): Promise<ApiResponse<Invoice>> {
