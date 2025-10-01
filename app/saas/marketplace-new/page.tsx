@@ -1469,7 +1469,7 @@ const agentCategories: AgentCategory[] = [
 
 // Function to generate comprehensive search data from all agents
 const generateSearchableAgents = () => {
-  const searchableAgents = [];
+  const searchableAgents: any[] = [];
   
   // Add all individual agents from all categories and sub-departments
   agentCategories.forEach(category => {
