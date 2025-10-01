@@ -274,7 +274,7 @@ class ApiClient {
 
   // Audit Logs
   async getAuditLogs(page: number = 1, limit: number = 50): Promise<PaginatedResponse<AuditLog>> {
-    return this.request(`/audit/logs?page=${page}&limit=${limit}`);
+    return this.requestPaginated(`/audit/logs?page=${page}&limit=${limit}`);
   }
 
   // Billing & Checkout
