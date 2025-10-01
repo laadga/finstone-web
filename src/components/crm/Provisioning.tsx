@@ -45,11 +45,11 @@ const mockProvisioningQueue = [
 
 export function Provisioning() {
   const [provisioningQueue, setProvisioningQueue] = useState(mockProvisioningQueue);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<any>(null);
 
-  const handleRetry = (id) => {
+  const handleRetry = (id: string) => {
     setProvisioningQueue(queue => 
-      queue.map(item => 
+      queue.map((item: any) => 
         item.id === id 
           ? { ...item, status: 'provisioning', lastUpdate: new Date().toISOString() }
           : item
@@ -57,7 +57,7 @@ export function Provisioning() {
     );
   };
 
-  const getStatusIcon = (status) => {
+  const getStatusIcon = (status: string) => {
     switch (status) {
       case 'provisioned':
         return <span className="text-green-500">✅</span>;
@@ -84,7 +84,7 @@ export function Provisioning() {
 
       {/* Provisioning Queue */}
       <div className="space-y-4">
-        {provisioningQueue.map((item) => (
+        {provisioningQueue.map((item: any) => (
           <div key={item.id} className="bg-white rounded-xl border border-gray-200 p-6">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-4">
@@ -164,7 +164,7 @@ export function Provisioning() {
             </div>
             <div className="p-6">
               <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm max-h-96 overflow-y-auto">
-                {selectedItem.logs.map((log, index) => (
+                {selectedItem.logs.map((log: any, index: number) => (
                   <div key={index} className="mb-2">
                     <span className="text-gray-500">
                       [{formatDateTime(log.timestamp)}]
