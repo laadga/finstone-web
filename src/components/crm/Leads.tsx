@@ -75,9 +75,9 @@ export function Leads() {
   const [leads, setLeads] = useState(mockLeads);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
-  const [selectedLead, setSelectedLead] = useState(null);
+  const [selectedLead, setSelectedLead] = useState<any>(null);
 
-  const filteredLeads = leads.filter(lead => {
+  const filteredLeads = leads.filter((lead: any) => {
     const matchesSearch = lead.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          lead.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          lead.email.toLowerCase().includes(searchTerm.toLowerCase());
@@ -85,7 +85,7 @@ export function Leads() {
     return matchesSearch && matchesStatus;
   });
 
-  const LeadRow = ({ lead }) => (
+  const LeadRow = ({ lead }: { lead: any }) => (
     <tr 
       className="hover:bg-gray-50 transition-colors cursor-pointer"
       onClick={() => setSelectedLead(lead)}
@@ -218,7 +218,7 @@ export function Leads() {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {filteredLeads.map((lead) => (
+              {filteredLeads.map((lead: any) => (
                 <LeadRow key={lead.id} lead={lead} />
               ))}
             </tbody>
