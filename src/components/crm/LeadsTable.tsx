@@ -81,6 +81,7 @@ export default function LeadsTable({ leads, onLeadSelect, selectedLead }: LeadsT
     const aValue = a[sortField as keyof Lead];
     const bValue = b[sortField as keyof Lead];
     
+    if (aValue === undefined || bValue === undefined) return 0;
     if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
     if (aValue > bValue) return sortDirection === 'asc' ? 1 : -1;
     return 0;
