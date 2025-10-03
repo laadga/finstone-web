@@ -1,6 +1,6 @@
 // Airtable configuration - using REST API directly for better Netlify compatibility
 function getAirtableConfig() {
-  let apiKey = process.env.AIRTABLE_API_KEY || 'patzwLBlaEqgIoe83';
+  let apiKey = process.env.AIRTABLE_API_KEY || 'patOEr4oNOwYZxEoW.1944174626b223f9672c32f5ee7ae2f5250d5ef4d2ff15026d1eb769321ac138';
   const baseId = process.env.AIRTABLE_BASE_ID || 'appZQiMdgYVqnyATD';
   
   // Ensure API key has correct format
