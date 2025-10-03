@@ -21,7 +21,7 @@ function Pricing() {
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
-                Get AI Audit <MoveRight className="w-4 h-4" />
+                Book Free Call <MoveRight className="w-4 h-4" />
               </button>
             </div>
             <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
@@ -37,7 +37,7 @@ function Pricing() {
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
-                Hire Your AI Workforce <MoveRight className="w-4 h-4" />
+                Book Free Call <MoveRight className="w-4 h-4" />
               </button>
             </div>
             <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
@@ -52,7 +52,7 @@ function Pricing() {
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
-                Contact Sales <PhoneCall className="w-4 h-4" />
+                Talk to Sales <PhoneCall className="w-4 h-4" />
               </button>
             </div>
             <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4 text-gray-800 font-bold">Features</div>
