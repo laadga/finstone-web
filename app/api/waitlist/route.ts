@@ -16,6 +16,12 @@ export async function POST(request: NextRequest) {
 
     const waitlistData = { email };
 
+    // Debug environment variables
+    console.log('🔍 Waitlist API Route Environment Debug:');
+    console.log('AIRTABLE_API_KEY exists:', !!process.env.AIRTABLE_API_KEY);
+    console.log('AIRTABLE_BASE_ID exists:', !!process.env.AIRTABLE_BASE_ID);
+    console.log('All env vars:', Object.keys(process.env).filter(key => key.includes('AIRTABLE')));
+
     // Try to save to Airtable first, fallback to file storage
     let saved = false;
     
@@ -23,7 +29,8 @@ export async function POST(request: NextRequest) {
       saved = await AirtableService.saveWaitlistSignup(waitlistData);
       console.log('✅ Waitlist signup saved to Airtable');
     } catch (airtableError) {
-      console.log('⚠️ Airtable not configured, saving to file instead');
+      console.log('⚠️ Airtable error:', airtableError);
+      console.log('⚠️ Saving to file instead');
       saved = await saveToFile('waitlist', waitlistData);
     }
 

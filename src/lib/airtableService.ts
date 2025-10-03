@@ -1,17 +1,24 @@
 import Airtable from 'airtable';
 
-// Airtable configuration
-const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY || 'patzwLBlaEqgIoe83';
-const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID || 'appZQiMdgYVqnyATD';
+// Airtable configuration - load at runtime for Netlify functions
+function getAirtableConfig() {
+  const apiKey = process.env.AIRTABLE_API_KEY || 'patzwLBlaEqgIoe83';
+  const baseId = process.env.AIRTABLE_BASE_ID || 'appZQiMdgYVqnyATD';
+  
+  // Debug logging
+  console.log('🔍 Airtable Config Debug:');
+  console.log('API Key exists:', !!apiKey);
+  console.log('API Key length:', apiKey?.length);
+  console.log('Base ID exists:', !!baseId);
+  console.log('Base ID:', baseId);
+  
+  return { apiKey, baseId };
+}
 
-// Debug logging
-console.log('🔍 Airtable Config Debug:');
-console.log('API Key exists:', !!AIRTABLE_API_KEY);
-console.log('API Key length:', AIRTABLE_API_KEY?.length);
-console.log('Base ID exists:', !!AIRTABLE_BASE_ID);
-console.log('Base ID:', AIRTABLE_BASE_ID);
-
-const base = new Airtable({ apiKey: AIRTABLE_API_KEY }).base(AIRTABLE_BASE_ID);
+function getAirtableBase() {
+  const { apiKey, baseId } = getAirtableConfig();
+  return new Airtable({ apiKey }).base(baseId);
+}
 
 export interface ContactFormData {
   firstName: string;
@@ -29,6 +36,7 @@ export interface WaitlistData {
 export class AirtableService {
   static async saveContactForm(data: ContactFormData): Promise<boolean> {
     try {
+      const base = getAirtableBase();
       await base('Contract submission').create([
         {
           fields: {
@@ -50,6 +58,7 @@ export class AirtableService {
 
   static async saveWaitlistSignup(data: WaitlistData): Promise<boolean> {
     try {
+      const base = getAirtableBase();
       await base('Newsletter').create([
         {
           fields: {
