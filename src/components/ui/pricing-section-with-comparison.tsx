@@ -18,7 +18,10 @@ function Pricing() {
                 <span className="text-4xl text-gray-800">$1,500</span>
                 <span className="text-sm text-gray-600"> (one-time)</span>
               </p>
-              <Button className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white">
+              <Button 
+                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+              >
                 Get AI Audit <MoveRight className="w-4 h-4" />
               </Button>
             </div>
@@ -31,7 +34,10 @@ function Pricing() {
                 <span className="text-4xl text-gray-800">$2,000</span>
                 <span className="text-sm text-gray-600"> / month</span>
               </p>
-              <Button className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white">
+              <Button 
+                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+              >
                 Hire Your AI Workforce <MoveRight className="w-4 h-4" />
               </Button>
             </div>
@@ -43,7 +49,10 @@ function Pricing() {
               <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
                 <span className="text-4xl text-gray-800">Custom</span>
               </p>
-              <Button className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white">
+              <Button 
+                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+              >
                 Contact Sales <PhoneCall className="w-4 h-4" />
               </Button>
             </div>
