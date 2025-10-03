@@ -19,7 +19,7 @@ function Pricing() {
               </p>
               <button 
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
-                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+                onClick={() => window.location.href = 'https://calendly.com/finstone/custom'}
               >
                 Book Free Call <MoveRight className="w-4 h-4" />
               </button>
@@ -35,7 +35,7 @@ function Pricing() {
               </p>
               <button 
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
-                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+                onClick={() => window.location.href = 'https://calendly.com/finstone/custom'}
               >
                 Book Free Call <MoveRight className="w-4 h-4" />
               </button>
@@ -50,7 +50,7 @@ function Pricing() {
               </p>
               <button 
                 className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
-                onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
+                onClick={() => window.location.href = 'https://calendly.com/finstone/custom'}
               >
                 Talk to Sales <PhoneCall className="w-4 h-4" />
               </button>
