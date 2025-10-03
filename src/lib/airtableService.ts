@@ -1,8 +1,15 @@
 import Airtable from 'airtable';
 
 // Airtable configuration
-const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY || 'your_airtable_api_key';
-const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID || 'your_airtable_base_id';
+const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY || 'patzwLBlaEqgIoe83';
+const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID || 'appZQiMdgYVqnyATD';
+
+// Debug logging
+console.log('🔍 Airtable Config Debug:');
+console.log('API Key exists:', !!AIRTABLE_API_KEY);
+console.log('API Key length:', AIRTABLE_API_KEY?.length);
+console.log('Base ID exists:', !!AIRTABLE_BASE_ID);
+console.log('Base ID:', AIRTABLE_BASE_ID);
 
 const base = new Airtable({ apiKey: AIRTABLE_API_KEY }).base(AIRTABLE_BASE_ID);
 
