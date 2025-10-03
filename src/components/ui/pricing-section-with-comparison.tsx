@@ -1,6 +1,5 @@
 import { Check, X, MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 function Pricing() {
   return (
@@ -18,12 +17,12 @@ function Pricing() {
                 <span className="text-4xl text-gray-800">$1,500</span>
                 <span className="text-sm text-gray-600"> (one-time)</span>
               </p>
-              <Button 
-                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+              <button 
+                className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
                 Get AI Audit <MoveRight className="w-4 h-4" />
-              </Button>
+              </button>
             </div>
             <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
               <p className="text-2xl text-gray-800">AI Workforce</p>
@@ -34,12 +33,12 @@ function Pricing() {
                 <span className="text-4xl text-gray-800">$2,000</span>
                 <span className="text-sm text-gray-600"> / month</span>
               </p>
-              <Button 
-                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+              <button 
+                className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
                 Hire Your AI Workforce <MoveRight className="w-4 h-4" />
-              </Button>
+              </button>
             </div>
             <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
               <p className="text-2xl text-gray-800">Enterprise</p>
@@ -49,12 +48,12 @@ function Pricing() {
               <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
                 <span className="text-4xl text-gray-800">Custom</span>
               </p>
-              <Button 
-                className="gap-4 mt-8 bg-blue-500 hover:bg-blue-600 text-white"
+              <button 
+                className="group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500 hover:ring-offset-1 mt-8"
                 onClick={() => window.open('https://calendly.com/finstone/custom', '_blank')}
               >
                 Contact Sales <PhoneCall className="w-4 h-4" />
-              </Button>
+              </button>
             </div>
             <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4 text-gray-800 font-bold">Features</div>
             <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center"></div>
