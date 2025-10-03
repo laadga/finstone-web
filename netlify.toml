@@ -6,3 +6,5 @@
   NODE_VERSION = "20.18.0"
   NPM_FLAGS = "--legacy-peer-deps"
   NPM_CONFIG_LEGACY_PEER_DEPS = "true"
+  AIRTABLE_API_KEY = "patzwLBlaEqgIoe83"
+  AIRTABLE_BASE_ID = "appZQiMdgYVqnyATD"
